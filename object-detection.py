@@ -1,4 +1,3 @@
-# This is a sciprt for blablabla
 import cv2
 import numpy as np
 from mediapipe.tasks import python
