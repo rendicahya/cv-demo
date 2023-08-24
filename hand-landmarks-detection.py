@@ -45,7 +45,18 @@ def draw_landmarks_on_image(rgb_image, detection_result):
             (text_x, text_y),
             cv2.FONT_HERSHEY_DUPLEX,
             1,
-            (88, 205, 54),
+            (255, 255, 255),
+            2,
+            cv2.LINE_AA,
+        )
+
+        cv2.putText(
+            annotated_image,
+            f"{handedness[0].category_name}",
+            (text_x, text_y),
+            cv2.FONT_HERSHEY_DUPLEX,
+            1,
+            (0, 0, 0),
             1,
             cv2.LINE_AA,
         )

@@ -78,7 +78,18 @@ while cap.isOpened():
             (text_x, text_y),
             cv2.FONT_HERSHEY_DUPLEX,
             1,
-            (255, 0, 0),
+            (255, 255, 255),
+            2,
+            cv2.LINE_AA,
+        )
+
+        cv2.putText(
+            annotated_image,
+            title,
+            (text_x, text_y),
+            cv2.FONT_HERSHEY_DUPLEX,
+            1,
+            (0, 0, 0),
             1,
             cv2.LINE_AA,
         )
