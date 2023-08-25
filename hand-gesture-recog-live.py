@@ -25,7 +25,7 @@ plt.rcParams.update(
 mp_hands = mp.solutions.hands
 mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
-base_options = python.BaseOptions(model_asset_path="gesture_recognizer.task")
+base_options = python.BaseOptions(model_asset_path="models/gesture_recognizer.task")
 options = vision.GestureRecognizerOptions(base_options=base_options)
 recognizer = vision.GestureRecognizer.create_from_options(options)
 cap = cv2.VideoCapture(0)
